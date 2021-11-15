@@ -7,20 +7,20 @@
 - 32 位无符号数截断
 - 32 位数逻辑与、32 位数逻辑或、32 位数逻辑非 、32 位数逻辑异或
 ## 目录说明
-- **sim_1** 放置Testbench文件
-- **constrs_1** 放置FPGA管脚约束文件
-- **sources_1** 放置模块文件
-    - **ALU_32bit_Display.v** 上FPGA调试模块
-    - **ALUModule.v** 顶层模块
-    - **DecoderModule.v**译码器模块
-    - **AdderModule.v** 加法器模块
-    - **ShiftModule.v** 移位器模块
-    - **TruncateModule.v** 截断器模块
-    - **AndModule.v** 逻辑与模块
-    - **OrModule.v** 逻辑或模块
-    - **NotModule.v** 逻辑非模块
-    - **XorModule.v** 逻辑异或模块
-    - **lcd_module.dcp** FPGA上LCD触摸屏模块
+- **sim_1**　　　　　　　　　　**放置Testbench文件**
+- **constrs_1**　　　　　　　　&nbsp;**放置FPGA管脚约束文件**
+- **sources_1**　　　　　　　　**放置模块文件**
+    - **ALU_32bit_Display.v**      &emsp;**FPGA上调试模块**
+    - **ALUModule.v**              &emsp;&emsp;&emsp;&emsp;**顶层模块**
+    - **DecoderModule.v**          &emsp;&emsp;**译码器模块**
+    - **AdderModule.v**            &emsp;&emsp;&emsp;**加法器模块**
+    - **ShiftModule.v**            &emsp;&emsp;&emsp;&ensp;**移位器模块**
+    - **TruncateModule.v**         &emsp;&ensp;&nbsp;**截断器模块**
+    - **AndModule.v**              &emsp;&emsp;&emsp;&ensp;&nbsp;**逻辑与模块**
+    - **OrModule.v**               &emsp;&emsp;&emsp;&emsp;&ensp;**逻辑或模块**
+    - **NotModule.v**              &emsp;&emsp;&emsp;&ensp;&nbsp;**逻辑非模块**
+    - **XorModule.v**              &emsp;&emsp;&emsp;&ensp;&ensp;**逻辑异或模块**
+    - **lcd_module.dcp**           &emsp;&emsp;&ensp;&nbsp;**FPGA上LCD触摸屏模块**
 ## 仿真环境
 - Vivado
 - FPGA

@@ -1,4 +1,3 @@
-[32bitALU_Design](#32bitALU_Design) 
 # 32bitALU_Design
 采用 Verilog 语言设计一个 32 位 ALU,所有模块均采用门级设计
 ## 功能描述

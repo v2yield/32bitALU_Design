@@ -10,7 +10,7 @@ module test_alu();
     wire CO;
     ALU_32bit uut(a,b,CI,F,dir,bite,S,CO);
     initial begin
-        ///F=000,25ns
+        //F=000,25ns
         CI=0;
         F=0;
         a=0;
@@ -19,7 +19,7 @@ module test_alu();
         bite=0;
         #25;
         
-        ///加法,50ns
+        //add,50ns
         F=3'b001;
         a=32'b1111111;
         b=32'b11111;
@@ -27,7 +27,7 @@ module test_alu();
         bite=0;
         #25;
 
-        ///逻辑左移,75ns
+        //left logical shifting,75ns
         a=32'b1111111111111111111111111;
         b=0;
         F=3'b010;
@@ -35,7 +35,7 @@ module test_alu();
         bite=5'b00111;
         #25;
 
-        ///逻辑右移,100ns
+        //right logical shifting,100ns
         a=32'b111111111111111111111111;
         b=0;
         F=3'b010;
@@ -43,7 +43,7 @@ module test_alu();
         bite=5'b00011;
         #25;
         
-        ///循环左移,125ns
+        //left cyclic shifting,125ns
         a=32'b111111111111111111;
         b=0;
         F=3'b010;
@@ -51,7 +51,7 @@ module test_alu();
         bite=5'b00111;
         #25;
         
-        ///循环右移,150ns
+        //right cyclic shifting,150ns
         a=32'b111111111111111111;
         b=0;
         F=3'b010;       
@@ -59,7 +59,7 @@ module test_alu();
         bite=5'b00111;
         #25;
         
-        ///向左截取,175ns
+        //left truncation,175ns
         a=32'b111111111111111111111111111111;
         b=0;
         F=3'b011;
@@ -67,7 +67,7 @@ module test_alu();
         bite=5'b11110;  
         #25;
          
-        ///向右截取,200ns
+        //right truncation,200ns
         a=32'b1111111111111111111111111111111;
         b=0;
         F=3'b011;
@@ -75,7 +75,7 @@ module test_alu();
         bite=5'b11110;  
         #25;
           
-        ///与,225ns
+        //and,225ns
         a=32'b1111111;
         b=32'b1110000;
         F=3'b100;
@@ -83,7 +83,7 @@ module test_alu();
         bite=0;
         #25;
 
-        ///或,250ns
+        //or,250ns
         a=32'b1110110;
         b=32'b110000;
         F=3'b101;
@@ -91,7 +91,7 @@ module test_alu();
         bite=0;
         #25;
 
-        ///非,275ns
+        //not,275ns
         a=32'b1111111;
         b=0;
         F=3'b110;
@@ -99,7 +99,7 @@ module test_alu();
         bite=0;
         #25;
 
-        ///异或,300ns
+        //xor,300ns
         a=32'b11111111;
         b=32'b1000111;
         F=3'b111;
